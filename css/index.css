@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav-bar {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 110px;
+  padding-bottom: 20px;
+  justify-content: center;
+  position: relative;
+  top: -80px;
+  width: inherit;
+  border-bottom: solid 2px white;
+  outline: solid 4px black;
+}
+
+.nav-bar-bracket {
+  color: white;
+  cursor: default;
+  font-size: 3em;
+  margin: 0 20px;
+  user-select: none;
+}
+
+.nav-bar-link {
+  border: solid 5px black;
+  color: white;
+  cursor: default;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+}
+
+.nav-bar-link:hover {
+  border-right: solid 5px white;
+  border-left: solid 5px white;
+}
+
+.nav-bar-link:active {
+  border-left: solid 5px orange;
+  border-right: solid 5px orange;
+  color: orange;
+}
