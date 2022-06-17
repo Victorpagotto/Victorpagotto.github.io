@@ -19,7 +19,7 @@ let navBarStatus = false;
 // Functions
 
 function animationFunction (move, target, max) {
-  navBarPosition += move;
+  navBarPosition += Math.ceil(navBar.clientHeight / 100) * move;
   target.style.top = `${-navBarPosition}px`;
   if (navBarPosition === max) {
     clearInterval(navBarInterval);
@@ -39,7 +39,7 @@ function movesNavBar (target, move) {
   if (move > 0) {
     max = navBar.clientHeight - NAV_MOUSE_SIZE;
   }
-  navBarInterval = setInterval(() => animationFunction(move, target, max), 1);
+  navBarInterval = setInterval(() => animationFunction(move, target, max), 5);
 }
 
 // Code
@@ -47,22 +47,22 @@ function movesNavBar (target, move) {
 navBar.addEventListener('mouseenter', () => {
   navBarStatus = true;
   menuSymbolContainer.style.color = 'orange';
-  movesNavBar(navBar, -2);
+  movesNavBar(navBar, -1);
 });
 
 navBar.addEventListener('mouseleave', () => {
   navBarStatus = false;
   menuSymbolContainer.style.color = 'white';
-  movesNavBar(navBar, 2);
+  movesNavBar(navBar, 1);
 });
 
 navBar.addEventListener('click', () => {
   if (navBarStatus === true) {
     menuSymbolContainer.style.color = 'orange';
-    movesNavBar(navBar, -2);
+    movesNavBar(navBar, -1);
   } else {
     menuSymbolContainer.style.color = 'white';
-    movesNavBar(navBar, 2);
+    movesNavBar(navBar, 1);
   }
   navBarStatus = !navBarStatus;
 });

@@ -31,17 +31,20 @@
 }
 
 .nav-bar-link {
+  align-items: center;
+  border-radius: 10px;
   border: solid 3px transparent;;
   color: white;
   cursor: default;
+  display: flex;
   font-family: 'Inconsolata', monospace;
   font-size: 1.5em;
   font-weight: 700;
+  height: 30px;
+  justify-content: center;
   padding: 0 30px;
-  text-align: center;
   text-decoration: none;
   user-select: none;
-  border-radius: 10px;
 }
 
 .nav-bar-link:hover {

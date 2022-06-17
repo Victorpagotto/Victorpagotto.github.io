@@ -9,3 +9,20 @@ body {
 header {
   width: 100%;
 }
+
+.img-container {
+  border-radius: 50%;
+  border: solid 5px orange;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-upper-container {
+  width: 100%;
+}
+
+.centralizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
