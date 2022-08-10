@@ -8,6 +8,7 @@ const menuSymbolContainer = menuSymbol.parentElement;
 
 const NAV_MOUSE_SIZE = menuSymbolContainer.clientHeight;
 const MIN_POSITION = 0;
+const originalPosition = navBar.clientHeight - NAV_MOUSE_SIZE;
 let navBarPosition = navBar.clientHeight - NAV_MOUSE_SIZE;
 let navBarInterval = null;
 const observer = new ResizeObserver((_elements) => {
@@ -20,16 +21,14 @@ let navBarStatus = false;
 
 function animationFunction (move, target, max) {
   navBarPosition += Math.ceil(navBar.clientHeight / 100) * move;
+  console.log(max)
+  if (navBarPosition < 0 || navBarPosition > originalPosition) {
+    clearInterval(navBarInterval);
+    navBarPosition = max;
+  }
   target.style.top = `${-navBarPosition}px`;
   if (navBarPosition === max) {
     clearInterval(navBarInterval);
-  }
-  const position = navBar.clientHeight - NAV_MOUSE_SIZE;
-  console.log(position);
-  if (navBarPosition > position || navBarPosition < MIN_POSITION) {
-    clearInterval(navBarInterval);
-    navBarPosition = position;
-    target.style.top = `-${position}px`;
   }
 }
 
@@ -37,13 +36,15 @@ function movesNavBar (target, move) {
   clearInterval(navBarInterval);
   let max = MIN_POSITION;
   if (move > 0) {
-    max = navBarPosition;
+    max = originalPosition;
   }
-  navBarInterval = setInterval(() => animationFunction(move, target, max), 5);
+  navBarInterval = setInterval(() => animationFunction(move, target, max), 2);
 }
 
 // Code
 
+
+console.log(navBarPosition);
 navBar.addEventListener('mouseenter', () => {
   navBarStatus = true;
   menuSymbolContainer.style.color = 'orange';

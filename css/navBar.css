@@ -7,7 +7,7 @@
   height: fit-content;
   justify-content: center;
   position: fixed;
-  top: -96px; /* menu-symbol-container height - nav-bar total height */
+  top: -86px; /* menu-symbol-container height - nav-bar total height */
   width: inherit;
   line-height: 10px;
   border-bottom: dotted 1px rgb(255, 136, 0);
@@ -16,7 +16,7 @@
 }
 
 .nav-bar-link-container {
-  padding: 40px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 40px;
+  height: 30px;
 }
 
 .menu-symbol {

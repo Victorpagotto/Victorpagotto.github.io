@@ -13,7 +13,6 @@ const flagSelectors = $.getElementsByClassName('flag-selector');
 
 // Data
 
-let flagInterval = null;
 let flagMax = null;
 
 // Funcs
