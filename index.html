@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/nutshell.css">
+    <link rel="stylesheet" href="css/detailsMe.css">
     <title>Document</title>
 </head>
 <body>
 <header>
+  <div class="flag-selector-container">
+    <img src="img\brasil_flag.png" alt="Brasil's flag" class="flag-selector">
+    <img src="img\USA_flag.png" alt="USA's flag" class="flag-selector">
+  </div>
   <nav class="nav-bar">
     <div class="nav-bar-link-container">
       <span class="nav-bar-bracket">[</span>
@@ -44,8 +49,22 @@
       </div>
     </div>
   </section>
+  <section class="details-container">
+    <div class="division-container">
+      <div class="div-ruler-section about-me-ruler"></div>
+      <h2 class="about-me-title">Who Am I</h2>
+      <div class="div-ruler-section about-me-ruler"></div>
+    </div>
+    <div class="section">
+
+    </div>
+    <div class="division-container">
+      <div class="div-ruler-section about-me-ruler bottom-details-ruler"></div>
+    </div>
+  </section>
 </header>
-  <script src="funcs/navbar.js"></script>
-  <script src="funcs/index.js"></script>
+  <script type="module" src="funcs/navbar.js"></script>
+  <script type="module" src="funcs/index.js"></script>
+  <script type="module" src="funcs/dataControl.js"></script>
 </body>
 </html>

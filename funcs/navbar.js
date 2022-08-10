@@ -37,7 +37,7 @@ function movesNavBar (target, move) {
   clearInterval(navBarInterval);
   let max = MIN_POSITION;
   if (move > 0) {
-    max = navBar.clientHeight - NAV_MOUSE_SIZE;
+    max = navBarPosition;
   }
   navBarInterval = setInterval(() => animationFunction(move, target, max), 5);
 }

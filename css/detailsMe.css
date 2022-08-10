@@ -1,0 +1,16 @@
+.details-container {
+  background-color: black;
+}
+
+.about-me-title {
+ margin: 0 30px;
+ color: orange;
+}
+
+.about-me-ruler {
+  background-color: orange;
+}
+
+.bottom-details-ruler {
+  margin-bottom: 0;
+}
