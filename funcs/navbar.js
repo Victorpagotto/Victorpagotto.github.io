@@ -31,10 +31,8 @@ function animationFunction (move, target, max) {
 
 function movesNavBar (target, move) {
   clearInterval(navBarInterval);
-  let max = MIN_POSITION;
-  if (move > 0) {
-    max = originalPosition;
-  }
+  menuSymbol.innerHTML = navBarStatus ? '︽' : '︾';
+  const max = move > 0 ? originalPosition : MIN_POSITION;
   navBarInterval = setInterval(() => animationFunction(move, target, max), 2);
 }
 
@@ -53,7 +51,7 @@ navBar.addEventListener('mouseleave', () => {
 });
 
 navBar.addEventListener('click', () => {
-  if (navBarStatus === true) {
+  if (navBarStatus) {
     menuSymbolContainer.style.color = 'orange';
     movesNavBar(navBar, -1);
   } else {
