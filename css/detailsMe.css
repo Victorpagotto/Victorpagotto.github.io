@@ -3,8 +3,10 @@
 }
 
 .about-me-title {
- margin: 0 30px;
  color: orange;
+ background-color: yellow;
+ border: solid 5px orange;
+ padding: 5px;
 }
 
 .about-me-ruler {

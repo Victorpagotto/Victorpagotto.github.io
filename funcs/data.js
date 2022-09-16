@@ -1,9 +1,9 @@
 const aboutMeTitle = [
-  'Eu como um Desenvolvedor',
-  'Me as a Developer',
+  'Desenvolvedor',
+  'Developer',
 ];
 const nutshelDetailslTItle = [
-  'Sobre mim', 'About me'
+  'Sobre Mim', 'About Me'
 ]
 const navLinkAbout = {
   aboutMeLink: ['Eu', 'Me'],

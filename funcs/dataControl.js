@@ -5,7 +5,8 @@ const $ = document;
 // Elements
 
 const navBarLinks = $.getElementsByClassName('nav-bar-link');
-const aboutMeTextBoxes = $.getElementsByClassName('about-me-box');
+const aboutMeTextBoxesTitles = $.getElementsByClassName('about-me-box-title');
+const aboutMeTextBoxesTexts = $.getElementsByClassName('about-me-box-content');
 const pointers = {
   aboutMeLink: navBarLinks[0],
   knowledgeLink: navBarLinks[1],
@@ -14,12 +15,12 @@ const pointers = {
   nutshelDetailslTItle: $.getElementsByClassName('about-me-title')[0],
   aboutMeTitle: $.getElementsByClassName('nutshell-title')[0],
   aboutMeText: $.getElementsByClassName('nutshell-text')[0],
-  aboutMeTitleBoxOne: aboutMeTextBoxes[0].children[0],
-  aboutMeTextBoxOne: aboutMeTextBoxes[0].children[1],
-  aboutMeTitleBoxTwo: aboutMeTextBoxes[1].children[0],
-  aboutMeTextBoxTwo: aboutMeTextBoxes[1].children[1],
-  aboutMeTitleBoxThree: aboutMeTextBoxes[2].children[0],
-  aboutMeTextBoxThree: aboutMeTextBoxes[2].children[1],
+  aboutMeTitleBoxOne: aboutMeTextBoxesTitles[0],
+  aboutMeTextBoxOne: aboutMeTextBoxesTexts[0],
+  aboutMeTitleBoxTwo: aboutMeTextBoxesTitles[1],
+  aboutMeTextBoxTwo: aboutMeTextBoxesTexts[1],
+  aboutMeTitleBoxThree: aboutMeTextBoxesTitles[2],
+  aboutMeTextBoxThree: aboutMeTextBoxesTexts[2],
 }
 
 const flagSelectors = $.getElementsByClassName('flag-selector');

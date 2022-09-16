@@ -28,6 +28,8 @@
 .avatar {
   background-image: url('../img/myImage.jpg');
   padding: 30%;
+  outline: solid 5px orange;
+  border: solid 3px yellow;
 }
 
 .avatar-container {
@@ -38,13 +40,38 @@
   color: white;
   height: fit-content;
   width: 80%;
+  border: solid 3px yellow;
+  outline: solid 5px orange;
+  background-color: rgb(219, 143, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  font-size: 1.2em;
+  min-width: 235px;
+}
+
+.edge-name-container {
+  position: absolute;
+  top: 122px;
+  left: -2px;
+}
+
+.my-name {
+  font-size: 1em;
+  position: absolute;
+  top: -45px;
+  left: 35px;
+  color: orange;
+  z-index: 2;
+  font-weight: 700;
+  text-align: center;
 }
 
 .about-me-box-container {
   color: white;
   width: 95%;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100%;
@@ -58,21 +85,162 @@
   padding: 20px;
   flex-grow: 1;
   flex-basis: 30%;
-  min-width: 230px;
+  min-width: 260px;
   max-width: 400px;
   font-size: 1.2em;
-  background-color: rgb(255, 266, 255, 0.3);
-  border-radius: 15px;
+  margin: 10px;
+  background-color: rgb(128, 128, 128);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: solid 5px white;
+  margin-top: 50px;
+}
+
+.edge-box-container {
+  position: absolute;
+  top: 120px;
+  left: 0px;
 }
 
 .about-me-box-title {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-bottom: 20px;
+  position: absolute;
+  top: -38px;
+  left: 48px;
+  text-align: center;
+  width: 140px;
 }
 
-@media screen and (max-width: 900px) {
+.about-me-box-content {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.2em;
+}
+
+/*Poligons*/
+
+/*Init poligons*/
+
+.container-edge {
+  position: absolute;
+  top: -156px;
+  left: 26px;
+  width: 0;
+  height: 0;
+}
+
+.poligon-container {
+  position: relative;
+}
+
+.edge-triangle, .edge-triangle-2 {
+  border-style: solid;
+  position: absolute;
+  border-width: 38px;
+  width: 0;
+  height: 0;
+}
+
+.edge-square {
+  height: 38px;
+  width: 165px;
+  position: absolute;
+  top: -7px;
+  left: 7px;
+}
+
+.edge-triangle-minor, .edge-triangle-2-minor {
+  border-style: solid;
+  position: absolute;
+  border-width: 34px;
+  width: 0;
+  height: 0;
+}
+
+.edge-square-minor {
+  height: 34px;
+  width: 160px;
+  position: absolute;
+  top: -1px;
+  left: 10px;
+}
+
+.edge-triangle {
+  top: -45px;
+  left: -31px;
+}
+
+.edge-triangle-2 {
+  left: 135px;
+  top: -45px;
+}
+
+.edge-triangle-minor {
+  top: -35px;
+  left: -24px;
+}
+
+.edge-triangle-2-minor {
+  left: 137px;
+  top: -35px;
+}
+
+.square-yellow {
+  background-color: yellow;
+}
+
+.triangle-yellow {
+  border-color: transparent transparent yellow transparent;
+}
+
+.square-orange {
+  background-color: orange;
+}
+
+.triangle-orange {
+  border-color: transparent transparent orange transparent;
+}
+
+.square-white {
+  background-color: white;
+}
+
+.triangle-white {
+  border-color: transparent transparent white transparent;
+}
+
+.square-grey {
+  background-color: rgb(128, 128, 128);
+}
+
+.triangle-grey {
+  border-color: transparent transparent rgb(128, 128, 128) transparent;
+}
+
+/*--------*/
+
+@media screen and (max-width: 1200px) {
   .nutshell-container {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .about-me-box {
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  .my-name {
+    font-size: 1.25em;
   }
 }
