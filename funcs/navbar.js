@@ -1,7 +1,9 @@
+const $ = document;
+
 // Elements
 
-const navBar = document.getElementsByClassName('nav-bar')[0];
-const menuSymbol = document.getElementsByClassName('menu-symbol')[0];
+const [navBar] = $.getElementsByClassName('nav-bar');
+const [menuSymbol] = $.getElementsByClassName('menu-symbol');
 const menuSymbolContainer = menuSymbol.parentElement;
 
 // Data
@@ -31,31 +33,33 @@ function animationFunction (move, target, max) {
 
 function movesNavBar (target, move) {
   clearInterval(navBarInterval);
-  menuSymbol.innerHTML = navBarStatus ? '︽' : '︾';
+  menuSymbol.innerHTML = navBarStatus ? '︽ MENU ︽' : '︾ MENU ︾';
   const max = move > 0 ? originalPosition : MIN_POSITION;
   navBarInterval = setInterval(() => animationFunction(move, target, max), 2);
 }
 
 // Code
 
+menuSymbolContainer.style.color = 'orange';
+
 navBar.addEventListener('mouseenter', () => {
   navBarStatus = true;
-  menuSymbolContainer.style.color = 'orange';
+  menuSymbolContainer.style.color = 'yellow';
   movesNavBar(navBar, -1);
 });
 
 navBar.addEventListener('mouseleave', () => {
   navBarStatus = false;
-  menuSymbolContainer.style.color = 'white';
+  menuSymbolContainer.style.color = 'orange';
   movesNavBar(navBar, 1);
 });
 
 navBar.addEventListener('click', () => {
   if (navBarStatus) {
-    menuSymbolContainer.style.color = 'orange';
+    menuSymbolContainer.style.color = 'yellow';
     movesNavBar(navBar, -1);
   } else {
-    menuSymbolContainer.style.color = 'white';
+    menuSymbolContainer.style.color = 'orange';
     movesNavBar(navBar, 1);
   }
   navBarStatus = !navBarStatus;

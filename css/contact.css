@@ -1,0 +1,106 @@
+.contact-container {
+  background-color: orange;
+  padding-bottom: 20px;
+}
+
+.contact-ruler {
+  background-color: black;
+}
+
+.contact-title {
+  padding: 10px;
+  border-left: solid 5px black;
+  border-right: solid 5px black;
+}
+
+.contact-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: auto;
+}
+
+.contact-icon-container {
+  flex-basis: 45%;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  border-radius: 25px;
+  border: solid 5px transparent;
+}
+
+.contact-icon:hover {
+  background-color: white;
+  border: solid 5px white;
+}
+
+.contact-icon:active {
+  background-color: rgb(128, 128, 128);
+  border: solid 5px rgb(128, 128, 128);
+}
+
+.contact-icon {
+  width: 100%;
+  width: 100px;
+  margin: 20px;
+}
+
+.contact-display-container {
+  width: fit-content;
+  background-color: yellow;
+  border: solid 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact-display {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+.link-contact-display {
+  display: none;
+}
+
+.display-copy-message {
+  z-index: 20;
+  display: none;
+}
+
+.click-display {
+  z-index: 20;
+}
+
+@media screen and (min-width: 580px) {
+  .contact-icon-container {
+    flex-basis: 24%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-display-container {
+    width: 100%;
+    min-width: none;
+    border-color: black transparent;
+  }
+  .contact-display {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .contact-display-container {
+    min-width: 400px;
+  }
+}

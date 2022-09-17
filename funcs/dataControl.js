@@ -21,6 +21,10 @@ const pointers = {
   aboutMeTextBoxTwo: aboutMeTextBoxesTexts[1],
   aboutMeTitleBoxThree: aboutMeTextBoxesTitles[2],
   aboutMeTextBoxThree: aboutMeTextBoxesTexts[2],
+  contactTitle:$.getElementsByClassName('contact-title')[0],
+  displayCopyMessage: $.getElementsByClassName('display-copy-message')[0],
+  displayClickMessage: $.getElementsByClassName('click-display')[0],
+  skillsTitle: $.getElementsByClassName('skills-title')[0],
 }
 
 const flagSelectors = $.getElementsByClassName('flag-selector');

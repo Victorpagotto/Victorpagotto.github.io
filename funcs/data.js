@@ -21,7 +21,7 @@ const aboutMeTextBoxes = {
     'Passado', 'Past'
   ],
   aboutMeTextBoxOne: [
-    'Nascido em Ji-Paraná - RO, e sempre fui apaixonado por tecnologia. Tendo ganho meu primeiro computador já cedo na infância, cresci tendo contato com a máquina. Sempre tive um desejo de solucionar problemas com tecnologia, e por muito tempo busquei qual seria o método que melhor encaixaria em mim; nessa busca foi onde eu encontrei a programação: uma forma de expressar minha criatividade.',
+    'Nascido em Ji-Paraná - RO, eu sempre fui apaixonado por tecnologia. Tendo ganho meu primeiro computador já cedo na infância, cresci tendo contato com a máquina. Sempre tive um desejo de solucionar problemas com tecnologia, e por muito tempo busquei qual seria o método que melhor encaixaria em mim; nessa busca foi onde eu encontrei a programação: uma forma de expressar minha criatividade.',
     'I was born in Ji-Paraná - RO, and I\'ve always been fascinated by technology. Since my early childhood I already had a PC, and have grown having contact with the machine. I\'ve always had a desire of solving problems with technology, and for a long time searched for which method would best fit me; and in this search was where I found programming: one way of expressing my creativity.'
   ],
   aboutMeTitleBoxTwo: [
@@ -39,11 +39,24 @@ const aboutMeTextBoxes = {
     'Besides being working, I intent also to continue and finish my Computer Science degree in Instituto Federal Catarinense. Being at the same time in the university and in the work environment, I\'d like to have both the academic and of practice experiences, thus becoming more versatile in knowledge. I have also the intent of learning new languages and tools, besides getting deeper knowledge of data science and web development, this way becoming also versatile in my capacities when developing anything.'
   ],
 }
+
+const skillsTitle = ['Conhecimentos', 'Knowledges'];
+const displayCopyMessage = ['Copiado!', 'Copied!'];
+const displayClickMessage = ['CLIQUE EM UM ÍCONE', 'CLICK AN ICON'];
+
+const contactTitle = [
+  'Contato',
+  'Contact'
+]
 const data = {
   ...navLinkAbout,
   ...aboutMeTextBoxes,
   aboutMeTitle,
   aboutMeText,
   nutshelDetailslTItle,
+  contactTitle,
+  displayCopyMessage,
+  displayClickMessage,
+  skillsTitle,
 };
 export default data;

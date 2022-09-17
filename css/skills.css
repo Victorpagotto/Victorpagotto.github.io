@@ -1,0 +1,121 @@
+.skills-container {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.78);
+  background-image: url('../img/circuit-background.webp');
+  background-blend-mode: soft-light;
+  padding: 5px;
+}
+
+.skills-title-container {
+  width: 100%;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2em;
+  color: orange;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.skill-list-container {
+  width: 95%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 12px;
+}
+
+.skill-container {
+  width: 100px;
+  height: 100px;
+  border: solid 6px transparent;
+  border-color: orange transparent transparent orange;
+  position: relative;
+  margin: 30px 10px;
+}
+
+.skill-image-container {
+  width: 85%;
+  height: 85%;
+}
+
+.skill-image {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.skill-name {
+  color: orange;
+  font-weight: 900;
+  text-align: center;
+  width: 115px;
+  position: absolute;
+  bottom: -45px;
+  right: -6px;
+}
+
+/* Skill poligons */
+
+.skill-poligon {
+  position: absolute;
+}
+
+.skill-lateral-edge {
+  border-bottom: solid 7px orange;
+  width: 44px;
+  bottom: 9px;
+  right: -10px;
+  transform: rotate(-45deg);
+}
+
+.skill-right-lateral {
+  height: 69px;
+  border-left: solid 6px orange;
+  right: -6px;
+  top: -6px;
+}
+
+.skill-bottom-lateral {
+  border-bottom: solid 6px orange;
+  width: 69px;
+  bottom: -6px;
+  left: -6px;
+}
+
+.skill-lateral-big-square {
+  height: 100px;
+  border-left: solid 6px orange;
+  left: -16px;
+  bottom: -6px;
+}
+
+.skill-lateral-small-square {
+  height: 70px;
+  border-left: solid 6px orange;
+  left: -21px;
+  top: -6px;
+}
+
+.skill-lateral-smallest-square {
+  height: 15px;
+  border-left: solid 6px orange;
+  left: -21px;
+  bottom: -6px;
+}
+
+@media screen and (min-width: 400px) {
+  .skill-container {
+    margin: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .skill-container {
+    margin: 30px 80px;
+  }
+}

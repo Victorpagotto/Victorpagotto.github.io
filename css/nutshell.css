@@ -21,8 +21,12 @@
 
 .nutshell-container {
   width: 50%;
-  padding-top: 100px;
+  margin-top: 100px;
   height: fit-content;
+}
+
+.avatar-container {
+  max-width: 600px;
 }
 
 .avatar {
@@ -30,10 +34,7 @@
   padding: 30%;
   outline: solid 5px orange;
   border: solid 3px yellow;
-}
-
-.avatar-container {
-  max-width: 600px;
+  position: relative;
 }
 
 .about-me-container {
@@ -43,8 +44,7 @@
   border: solid 3px yellow;
   outline: solid 5px orange;
   background-color: rgb(219, 143, 0, 0.2);
-  padding: 10px;
-  border-radius: 5px;
+  padding: 5px;
   position: relative;
   font-size: 1.2em;
   min-width: 235px;
@@ -52,7 +52,7 @@
 
 .edge-name-container {
   position: absolute;
-  top: 122px;
+  top: 118px;
   left: -2px;
 }
 
@@ -221,17 +221,56 @@
   border-color: transparent transparent rgb(128, 128, 128) transparent;
 }
 
+.poligon-border {
+  position: absolute;
+  border: solid 15px;
+  width: 40%;
+  height: 40%;
+}
+
+.poligon-border-right-top {
+  border-color: orange orange transparent transparent;
+  top: -30px;
+  right: -30px;
+}
+
+.poligon-border-left-top {
+  border-color: orange transparent transparent orange;
+  top: -30px;
+  left: -30px;
+}
+
+.poligon-border-right-bottom {
+  border-color: transparent transparent orange orange;
+  bottom: -30px;
+  left: -30px;
+}
+
+.poligon-border-left-bottom {
+  border-color: transparent orange orange transparent;
+  bottom: -30px;
+  right: -30px;
+}
+
 /*--------*/
 
 @media screen and (max-width: 1200px) {
   .nutshell-container {
     width: 100%;
   }
+
+  .avatar {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 400px) {
   .about-me-box {
     min-width: 350px;
+  }
+
+  .about-me-container {
+    padding: 10px;
   }
 }
 
