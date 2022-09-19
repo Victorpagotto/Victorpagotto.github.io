@@ -4,18 +4,22 @@ body {
 
 .project-outter-container {
   border: solid 2px orange;
-  height: 850px;
-  margin: 50px auto 20px;
-  margin-top: 50px;
+  min-height: 400px;
+  height: 92vh;
+  margin: 40px auto 20px;
   width: 95%;
   position: relative;
   padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: center;
 }
 
 .project-list-container {
   position: relative;
   border: solid 1px orange;
-  height: 15%;
+  min-height: 135px;
   width: 100%;
 }
 
@@ -26,16 +30,6 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   overflow-x: scroll;
-}
-
-.project-list::-webkit-scrollbar {
-  background-color: transparent;
-  height: 10px;
-  border: solid 1px orange;
-}
-
-.project-list::-webkit-scrollbar-thumb {
-  background-color: orange;
 }
 
 .project-selector {
@@ -64,23 +58,22 @@ body {
   color: yellow;
 }
 
-.project-name {
-  z-index: 19;
-}
-
 .project-showcase-container {
   position: relative;
   border: solid 1px orange;
-  height: 85%;
   width: 100%;
+  height: 100%;
+  min-height: 0;
   color: orange;
 }
 
 .project-showcase {
   width: 100%;
+  height: 100%;
   padding: 20px 5%;
   box-sizing: border-box;
   margin: auto;
+  overflow-y: scroll;
 }
 
 .project-show-container {
@@ -94,6 +87,35 @@ body {
 
 .params:last-child {
   color: yellow;
+}
+
+.bios-description {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.showcase-paragraph {
+  color: white;
+  line-height: 1.2em;
+  font-size: 1.1em;
+  text-align: justify;
+  font-family: 'Inconsolata', monospace;
+}
+
+.project-list::-webkit-scrollbar,
+.project-showcase::-webkit-scrollbar {
+  background-color: transparent;
+  height: 10px;
+  border: solid 1px orange;
+}
+
+.project-showcase::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-list::-webkit-scrollbar-thumb,
+.project-showcase::-webkit-scrollbar-thumb {
+  background-color: orange;
 }
 
 /* Poligons */

@@ -5,6 +5,7 @@ const $ = document;
 const [navBar] = $.getElementsByClassName('nav-bar');
 const [menuSymbol] = $.getElementsByClassName('menu-symbol');
 const menuSymbolContainer = menuSymbol.parentElement;
+const flagSelectors = $.getElementsByClassName('flag-selector');
 
 // Data
 
@@ -63,6 +64,12 @@ navBar.addEventListener('click', () => {
     movesNavBar(navBar, 1);
   }
   navBarStatus = !navBarStatus;
+});
+
+Array.from(flagSelectors).forEach((flagSelector, i) => {
+  flagSelector.addEventListener('click', () => {
+    localStorage.setItem('language', JSON.stringify(i));
+  })
 });
 
 observer.observe(navBar);

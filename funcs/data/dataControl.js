@@ -4,14 +4,14 @@ const $ = document;
 
 // Elements
 
-const navBarLinks = $.getElementsByClassName('nav-bar-link');
 const aboutMeTextBoxesTitles = $.getElementsByClassName('about-me-box-title');
 const aboutMeTextBoxesTexts = $.getElementsByClassName('about-me-box-content');
+
+const flagSelectors = $.getElementsByClassName('flag-selector');
+
+// Data
+
 const pointers = {
-  aboutMeLink: navBarLinks[0],
-  knowledgeLink: navBarLinks[1],
-  projectsLink: navBarLinks[2],
-  contactsLink: navBarLinks[3],
   nutshelDetailslTItle: $.getElementsByClassName('about-me-title')[0],
   aboutMeTitle: $.getElementsByClassName('nutshell-title')[0],
   aboutMeText: $.getElementsByClassName('nutshell-text')[0],
@@ -27,12 +27,6 @@ const pointers = {
   skillsTitle: $.getElementsByClassName('skills-title')[0],
 }
 
-const flagSelectors = $.getElementsByClassName('flag-selector');
-
-// Data
-
-let flagMax = null;
-
 // Funcs
 
 function setTexts(mode) {
@@ -45,10 +39,11 @@ function setTexts(mode) {
 
 // Code
 
-setTexts(0);
+setTexts(JSON.parse(localStorage.getItem('language') || 0));
 
 Array.from(flagSelectors).forEach((selector, i) => {
   selector.addEventListener('click', () => {
+    localStorage.setItem('language', JSON.stringify(i));
     setTexts(i);
   });
 })
