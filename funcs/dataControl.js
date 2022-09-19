@@ -37,7 +37,9 @@ let flagMax = null;
 
 function setTexts(mode) {
   Object.keys(pointers).forEach((pointer) => {
-    pointers[pointer].innerHTML = data[pointer][mode];
+    if (pointers[pointer]) {
+      pointers[pointer].innerHTML = data[pointer][mode];
+    }
   });
 }
 

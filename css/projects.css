@@ -1,0 +1,137 @@
+body {
+  background-color: black;
+}
+
+.project-outter-container {
+  border: solid 2px orange;
+  height: 850px;
+  margin: 50px auto 20px;
+  margin-top: 50px;
+  width: 95%;
+  position: relative;
+  padding: 10px;
+}
+
+.project-list-container {
+  position: relative;
+  border: solid 1px orange;
+  height: 15%;
+  width: 100%;
+}
+
+.project-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-x: scroll;
+}
+
+.project-list::-webkit-scrollbar {
+  background-color: transparent;
+  height: 10px;
+  border: solid 1px orange;
+}
+
+.project-list::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+.project-selector {
+  min-width: 100px;
+  width: 100px;
+  margin: 10px;
+  border: dotted 2px orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: orange;
+  z-index: 20;
+  background-color: transparent;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1em;
+}
+
+.project-selector:hover {
+  border-color: yellow;
+  color: yellow;
+}
+
+.project-selector-selected {
+  border-color: yellow;
+  color: yellow;
+}
+
+.project-name {
+  z-index: 19;
+}
+
+.project-showcase-container {
+  position: relative;
+  border: solid 1px orange;
+  height: 85%;
+  width: 100%;
+  color: orange;
+}
+
+.project-showcase {
+  width: 100%;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.project-show-container {
+  border: dotted 3px transparent;
+  border-color: orange transparent transparent transparent;
+}
+
+.params:first-child {
+  color: orange;
+}
+
+.params:last-child {
+  color: yellow;
+}
+
+/* Poligons */
+
+.project-edge-poligon {
+  border: solid 6px transparent;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+
+.showcase-edge-poligon {
+  border: solid 3px transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.project-edge-poligon-top-left {
+  top: 0;
+  left: 0;
+  border-color: orange transparent transparent orange;
+}
+
+.project-edge-poligon-top-right {
+  top: 0;
+  right: 0;
+  border-color: orange orange transparent transparent;
+}
+
+.project-edge-poligon-bottom-left {
+  left: 0;
+  bottom: 0;
+  border-color: transparent transparent orange orange;
+}
+
+.project-edge-poligon-bottom-right {
+  right: 0;
+  bottom: 0;
+  border-color: transparent orange orange transparent;
+}
