@@ -89,10 +89,29 @@ body {
   color: yellow;
 }
 
+.param-link {
+  margin-bottom: 10px;
+  border: solid 3px yellow;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  max-width: 80%;
+  text-decoration: none;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.param-link:hover {
+  border: solid 3px white;
+  color: white;
+}
+
 .bios-description {
   text-align: center;
   font-size: 1.2em;
 }
+
 
 .showcase-paragraph {
   color: white;

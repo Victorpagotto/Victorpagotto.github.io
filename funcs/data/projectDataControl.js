@@ -21,6 +21,7 @@ const params = 'params';
 const showBios = 'showcase-bios';
 const descript = 'bios-description';
 const showText = 'showcase-paragraph';
+const paramLink = 'param-link';
 
 
 let selectedProject = undefined;
@@ -50,6 +51,18 @@ const generateGIFField = (gifSources) => {
   return null;
 };
 
+const generateLink = (field, data, text, language) => {
+  if (field && data) {
+    const paramsContainer = creator('div', '', [showContainer], showcase);
+    creator('p', field[language], [params], paramsContainer);
+    const createdLink = creator('a', text[language], [params, paramLink], paramsContainer);
+    createdLink.href = data[language];
+    createdLink.target='_blank';
+    return paramsContainer;
+  }
+  return null;
+}
+
 const generateParams = (field, data, language) => {
   if(field && data) {
     const paramsContainer = creator('div', '', [showContainer], showcase);
@@ -59,6 +72,7 @@ const generateParams = (field, data, language) => {
   }
   return null;
 };
+
 
 const generateDetails = (project, language) => {
   const biosContainer = creator('div', '', [showBios, showContainer], showcase);
@@ -73,6 +87,9 @@ const generateBios = (project, language) => {
   showcase.innerHTML = '';
   generateGIFField(project.gifs);
   Object.keys(project.params).forEach((param) => {
+    if (param === 'github') {
+      return generateLink(projectFields.params[param], project.params[param], project.params[param], language);
+    }
     generateParams(projectFields.params[param], project.params[param], language);
   });
   generateDetails(project, language);
