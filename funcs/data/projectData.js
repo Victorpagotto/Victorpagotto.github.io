@@ -25,11 +25,11 @@ const recipeApp = {
     ['A confecção do aplicativo foi não apenas desafiadora - mas também excitante. Com o desafio de se consumir duas API\'s para propósitos tão semelhantes mas ao mesmo tempo com elementos tão distintos, o método criado para tratar os dados e os distribuir pela aplicação foi realizar a criação de um mapa a partir de um objeto, evitando assim a criação de código duplicado. Aprender a utilizar a atualização automática do React para a criação do CSS foi um grande aprendizado, juntamente com o uso de contextAPI para diminuir o número de hooks na aplicação.'],
   ],
   [
-    ['In production'],
-    ['In production'],
-    ['In production'],
-    ['In production'],
-    ['In production'],
+    ['This is a project developed using React through Hooks and Context API. Created for mobile devices, the app was designed so that it\'s possible to see, filter and search for recipes, in addition keeping track and record of made recipes, along with the progress of their preparation; all of this being possible both for drinks and meals.'],
+    ['For this to be possible, the app consumes two APIs with distinct elements, but similar structures. Throughout the 8 project days, three other people and I were in charge of synchronizing schedules and appointments so that we could, together, finish the project so that it was presented in good condition and with all the functionalities created and tested in time.'],
+    ['I, in particular, was responsible for creating all the CSS and preparing the data consumed from the API to the project, as well as creating the pages that list favorite and made recipes, in addition to the main page (home) - where those are displayed. All of these were tested by one of my groupmates as I created the features, while the other two members built the recipes\' details and progress pages, displayed by clicking on one of them and then starting it, which I would later refactor from the base code they had created.'],
+    ['With one of our teammates out of work because of personal problems, our group, originally composed by 5, became 4, and we had to work overloaded, which would become even harder when one of the other duo would also have problems getting together with us for working, making us 3. However, despite the challenges, we not only managed to finish on the schedule, but also before one day of its end, so that the CSS could be refined by me, and a beautiful slideshow, created by my duo - so that the project could be presented to the class, was created.'],
+    ['Creating the app was not only challenging - but also exciting. With the challenge of consuming two API\'s in the same way but wit different elements, the method created to treat the data and distribute them throughout the application was to create a map from an object, thus avoiding the creation of duplicate code and pages. Learning to use React\'s auto-update to create the CSS was a great learning experience, along with using the contextAPI to decrease the number of hooks in the application.'],
   ],],
   gifs: [],
 }
@@ -48,9 +48,9 @@ const blogAPI = {
     ['O principal desafio aqui era o manejo de informações utilizando-se do Sequelize, uma ferramenta com a qual não possuía total familiaridade. Entretanto o Sequelize mostra-se muito prático e eficiente, abstraindo o processo da criação de queries sem a perda de qualquer funcionalidade. Por ter sido feita a partir de Sequelize, a API pode ser facilmente adaptada a outros tipos de banco de dados, uma vez que a interface é capaz de se adaptar aos mesmos com a simples mudança de alguns parâmetros.'],
   ],
   [
-    ['In production'],
-    ['In production'],
-    ['In production'],
+    ['Developed as an API capable of supporting a blog, it can receive, return, search and handle (CRUD) information about users, posts and categories within a MySQL database using the abstraction from Sequelize, a tool capable of serving as an interface between the API code and the database, with already made query templates. That said, the API is focused on building services and controllers based on Express and its routes.'],
+    ['All the code is created based in principles of the REST concept, thus having an efficient handling of data integrity - with validations, verifications and data encryption using JWT for correlation between users and functionalities/posts, also seeking clear answers with the routes\' returns.'],
+    ['The main challenge was managing information using Sequelize, a tool with which I was not fully familiar. However, Sequelize proves to be very practical and efficient, abstracting the process of creating queries without losing any functionality. As it was made from Sequelize, the API can be easily adapted to other database types, since the interface is able to adapt to them with the simple change of some parameters.'],
   ],],
   gifs: [],
 }
