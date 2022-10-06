@@ -1,13 +1,13 @@
-<h1 align="center">Blog API</h1>
+<h1 align="center">Portfolio</h1>
 
 <h2 align="center">Português</h2>
 
 
-**Nome**: Blog API
+**Nome**: Portfólio
 
-**Conhecimentos Usados**: JavaScript e Sequelize.
+**Conhecimentos Usados**: JavaScript, HTML e CSS.
 
-**Ferramentas usadas**: Node.js, JWT, Express e MySQL.
+**Ferramentas usadas**: ESLint.
 
 **Número de Pessoas**: 1 (sozinho).
 
@@ -37,11 +37,11 @@ Para solucionar isso, foi usado um observador, o qual iria informar o código a 
 <h2 align="center">English</h2>
 
 
-**Name**: Blog API
+**Name**: Portfolio
 
-**Used Knowledges**: JavaScript and Sequelize.
+**Used Knowledges**: JavaScript, HTML and CSS.
 
-**Used Tools**: Node.js, JWT, Express and MySQL.
+**Used Tools**: ESLint.
 
 **Number of People**: 1 (solo).
 
